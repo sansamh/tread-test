@@ -5,11 +5,14 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 
 import org.junit.Before;
 import org.junit.Test;
-
+/**
+ * test
+ * @author Administrator
+ *
+ */
 public class ExecutorServiceTest {
 	
 	static ExecutorService pool;
@@ -110,8 +113,7 @@ public class ExecutorServiceTest {
 			e.printStackTrace();
 		}
 		
-		// 不调用future.get()方法 异步执行
-//		class com.sansam.ExecutorServiceTest before submitCallable 
+		// 不调用future.get()方法 异步执行s//		class com.sansam.ExecutorServiceTest before submitCallable 
 //		class com.sansam.ExecutorServiceTest after submitCallable 
 //		class com.sansam.ExecutorServiceTest$3 : submitCallable
 		System.out.println(getClass()+" after submitCallable ");
